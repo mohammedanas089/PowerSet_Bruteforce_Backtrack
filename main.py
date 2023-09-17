@@ -4,17 +4,8 @@ from backtrack import powerset_backtracking
 
 st.title("Powerset Finder App")
 
-if "visibility" not in st.session_state:
-    st.session_state.visibility = "visible"
-    st.session_state.disabled = False
-    st.session_state.placeholder = "Ex: 1,2,6,2"
 
-input_set = st.text_input(
-    "Enter a set of elements (comma-separated):",
-    label_visibility=st.session_state.visibility,
-    disabled=st.session_state.disabled,
-    placeholder=st.session_state.placeholder,
-)
+input_set = st.text_input("Enter a set of elements (comma-separated):",placeholder="Ex: 1,2,6,2")
 
 input_set = [x.strip() for x in input_set.split(',')]
 
