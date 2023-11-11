@@ -17,7 +17,7 @@ def powerset_backtracking(input_set):
             current_set.append(input_set[i])
             chart_placeholder = st.empty()
             chart_placeholder.graphviz_chart(global_graph)  # Update the same graph
-            time.sleep(1)  # Adjust the delay duration as needed
+            time.sleep(2)  # Adjust the delay duration as needed
             chart_placeholder.empty()
             backtrack(i + 1, current_set)
             current_set.pop()
